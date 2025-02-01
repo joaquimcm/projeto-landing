@@ -9,7 +9,7 @@
 body {
     background-color: rgb(31, 29, 29);
     font-family: poppinsregular;
-    max-width: 1250px;
+    max-width: 1150px;
     margin: 0 auto;
     padding: 10px;
 }
@@ -24,7 +24,8 @@ header {
 
 #title {
     flex-direction: column;
-    line-height: 20px;
+    line-height: 30px;
+    font-family: 'poppinslight';
 }
 
 li{
@@ -39,14 +40,84 @@ a {
 
 li#conta {
     border: 4px solid rgb(146, 6, 146);
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 10px;
+
+    transition: 0.5s;
+}
+
+li {
+    transition: 0.1s;
+}
+li:hover {
+    scale: 110%;
 }
 
 li#conta:hover {
     background-color: rgb(146, 6, 146);
+    scale: 110%;
 }
 
 main > aside {
+    margin-top: 50px;
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+aside > p {
+    max-width: 400px;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+article > img {
+    margin-right: 50px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+ main > aside > h2 > span {
+    color: rgb(146, 6, 146);
+}
+
+h2#down {
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+main > aside > h2 {
+    font-family: 'poppinsbold';
+    font-size: 3em;
+    margin: auto;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+input{
     margin-top: 10px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 40%;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
 }
